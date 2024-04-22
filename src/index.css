@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+@layer base {
+  html {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+  }
+}
+
+@layer components {
+  .button-base {
+    @apply px-3 py-2 text-xs hover:bg-gray-200;
+  }
+
+  .button-border {
+    @apply border-r;
+  }
+}
