@@ -18,7 +18,7 @@ function SearchForm() {
   ];
 
   return (
-    <form action="#" className="w-full border px-10 py-10">
+    <form action="#" className="w-full rounded-lg px-10 py-8 bg-gray-50">
       <div className="w-[49rem] flex flex-col gap-2">
         {/* 기간 */}
         <div className="flex gap-2 items-center">
@@ -30,7 +30,7 @@ function SearchForm() {
             <input type="date" className='w-28 h-9 rounded-md border border-gray-300 py-1.5 pl-2 pr-2 text-gray-900 shadow-sm sm:text-sm sm:leading-6' />
           </div>
           {/* 기간별 선택 버튼 */}
-          <div className="rounded-md shadow-sm ring-1 ring-inset ring-gray-300 overflow-hidden">
+          <div className="rounded-md shadow-sm ring-1 ring-inset ring-gray-300 overflow-hidden bg-white">
             {buttons.map((label, index) => (
               <button key={label} className={`button-base ${index < buttons.length - 1 ? 'button-border' : ''}`}>
                 {label}
@@ -44,7 +44,7 @@ function SearchForm() {
           <label className="w-24" htmlFor="filter-select">검색조건</label>
           <SelectButton options={filterOptions} />
           <input type="text" placeholder="검색어를 입력해주세요" className="grow h-9 rounded-md border border-gray-300 py-1.5 pl-2 pr-2 text-gray-900 shadow-sm ring-inset ring-gray-300 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm sm:leading-6" />
-          <button className="h-9 mr-1.5 rounded-md bg-black text-white px-8 sm:text-sm sm:leading-6">검색하기
+          <button className="h-9 mr-1.5 px-6 rounded-md bg-black text-white sm:text-sm sm:leading-6">검색하기
           </button>
         </div>
 

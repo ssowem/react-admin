@@ -4,7 +4,7 @@ import Menubar from './components/Menubar';
 
 function App() {
   return (
-    <div className='flex'>
+    <div className='flex w-screen h-screen overflow-hidden'>
     <Menubar />
     <Content />
     </div>
